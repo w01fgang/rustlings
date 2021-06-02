@@ -12,9 +12,7 @@ fn main() {
 
     let mut numbers: [Option<u16>; 5] = Default::default();
     for iter in 0..5 {
-        let number_to_add: Option<u16> = Some(
-            ((iter * 1235) + 2) / (4 * 16)
-        );
+        let number_to_add: Option<u16> = Some(((iter * 1235) + 2) / (4 * 16));
 
         numbers[iter as usize] = number_to_add;
     }

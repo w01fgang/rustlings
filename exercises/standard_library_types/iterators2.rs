@@ -7,7 +7,7 @@
 // Complete the `capitalize_first` function.
 // "hello" -> "Hello"
 pub fn capitalize_first(input: &str) -> String {
-    if  input.len() == 0 {
+    if input.len() == 0 {
         input.to_owned()
     } else {
         let mut c = input.chars();
@@ -25,11 +25,7 @@ pub fn capitalize_first(input: &str) -> String {
 // Return a vector of strings.
 // ["hello", "world"] -> ["Hello", "World"]
 pub fn capitalize_words_vector(words: &[&str]) -> Vec<String> {
-    words
-        .to_vec()
-        .into_iter()
-        .map(capitalize_first)
-        .collect()
+    words.to_vec().into_iter().map(capitalize_first).collect()
 }
 
 // Step 3.
@@ -37,11 +33,7 @@ pub fn capitalize_words_vector(words: &[&str]) -> Vec<String> {
 // Return a single string.
 // ["hello", " ", "world"] -> "Hello World"
 pub fn capitalize_words_string(words: &[&str]) -> String {
-    words
-        .to_vec()
-        .into_iter()
-        .map(capitalize_first)
-        .collect()
+    words.to_vec().into_iter().map(capitalize_first).collect()
 }
 
 #[cfg(test)]

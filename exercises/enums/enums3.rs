@@ -40,13 +40,13 @@ impl State {
         match message {
             Message::ChangeColor(color) => {
                 self.color = color;
-            },
+            }
             Message::Move(point) => {
                 self.position = point;
-            },
+            }
             Message::Quit => {
                 &self.quit();
-            },
+            }
             Message::Echo(msg) => {
                 self.echo(msg);
             }

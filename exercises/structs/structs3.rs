@@ -14,10 +14,7 @@ struct Package {
 impl Package {
     fn new(sender_country: String, recipient_country: String, weight_in_grams: i32) -> Package {
         if weight_in_grams <= 0 {
-            panic!(
-                "The weight can't be zero: {}",
-                weight_in_grams
-            )
+            panic!("The weight can't be zero: {}", weight_in_grams)
         } else {
             return Package {
                 sender_country,
